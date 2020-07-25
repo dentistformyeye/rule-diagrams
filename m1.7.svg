@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+    .background {fill:white;}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(190,144,217);}
+    .via {fill:rgb(59,0,246);}
+    
+]]></style></defs><rect class="met1" height="346.1033082765896" width="346.1033082765896" x="0" y="0" /><rect class="background" height="173.0516541382948" width="173.0516541382948" x="86.5258270691474" y="86.5258270691474" /><line stroke="black" stroke-width="1" x1="364.6033082765896" x2="129.7887406037211" y1="18.5" y2="129.7887406037211" /><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="148.33370443721464" y1="129.7887406037211" y2="128.3148355370896" /><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="137.78435656145848" y1="129.7887406037211" y2="112.9911751495429" /><text x="369.6033082765896" y="18.5">area &gt;= 0.140µm2</text><text x="369.6033082765896" y="37">(m1.7)</text></svg>

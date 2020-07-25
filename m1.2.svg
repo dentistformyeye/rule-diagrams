@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+    .background {fill:white;}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(190,144,217);}
+    .via {fill:rgb(59,0,246);}
+    
+]]></style></defs><rect class="met1 met1" height="194.25000000000006" width="129.50000000000003" x="0" y="0" /><rect class="met1 met1" height="194.25000000000006" width="129.50000000000003" x="259.00000000000006" y="0" /><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="259.00000000000006" y1="194.25000000000006" y2="194.25000000000006" /><line stroke="black" stroke-width="1" x1="259.00000000000006" x2="249.1450874179423" y1="194.25000000000006" y2="188.56009666162953" /><line stroke="black" stroke-width="1" x1="259.00000000000006" x2="249.1450874179423" y1="194.25000000000006" y2="199.93990333837058" /><line stroke="black" stroke-width="1" x1="259.00000000000006" x2="129.50000000000003" y1="194.25000000000006" y2="194.25000000000006" /><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="139.35491258205778" y1="194.25000000000006" y2="199.93990333837058" /><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="139.35491258205778" y1="194.25000000000006" y2="188.56009666162953" /><text x="129.50000000000003" y="212.75000000000006">space &gt;= 0.140µm</text><text x="129.50000000000003" y="231.25000000000006">(m1.2)</text></svg>

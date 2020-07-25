@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+    .background {fill:white;}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .via {fill:rgb(59,0,246);}
+    
+]]></style></defs><rect class="via via" height="235.875" width="157.25" x="0" y="0" /><rect class="via via" height="235.875" width="157.25" x="314.5" y="0" /><line stroke="black" stroke-width="1" x1="157.25" x2="314.5" y1="235.875" y2="235.875" /><line stroke="black" stroke-width="1" x1="314.5" x2="303.64041524734944" y1="235.875" y2="229.60503189800778" /><line stroke="black" stroke-width="1" x1="314.5" x2="303.64041524734944" y1="235.875" y2="242.14496810199222" /><line stroke="black" stroke-width="1" x1="314.5" x2="157.25" y1="235.875" y2="235.875" /><line stroke="black" stroke-width="1" x1="157.25" x2="168.10958475265053" y1="235.875" y2="242.14496810199222" /><line stroke="black" stroke-width="1" x1="157.25" x2="168.10958475265053" y1="235.875" y2="229.60503189800778" /><text x="157.25" y="254.375">width &gt;= 0.170µm</text><text x="157.25" y="272.875">(via.2)</text></svg>
