@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<svg baseProfile="full" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
-    .background {fill:white;}
-    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217);}
-    .huge_met1 {fill:rgb(190,144,217);}
-    .via {fill:rgb(59,0,246);}
-    
-]]></style></defs><rect class="huge_met1 met1" height="555" width="555" x="0" y="0" /><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="0" /><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="90.65" /></svg>
