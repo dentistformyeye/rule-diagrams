@@ -6,12 +6,12 @@ import os
 import sys
 from lxml import etree
 
-cm=37.25
+cm=37
 classes="""
     .background {fill:white;}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217.25);}
-    .huge_met1 {fill:rgb(190,144,217.25);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
     
 """
