@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<svg baseProfile="full" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 1238.5 558.75"><defs><style type="text/css">
     .background {fill:white;}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217);}
-    .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217.25);}
+    .huge_met1 {fill:rgb(190,144,217.25);}
     .via {fill:rgb(59,0,246);}
     
-]]></style></defs><rect class="huge_met1 met1" height="555" width="555" x="0" y="0" /><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="0" /><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="90.65" /></svg>
+</style></defs><rect class="huge_met1 met1" height="558.75" width="558.75" x="0" y="0"/><rect class="huge_met1 met1" height="39.112500000000004" width="52.150000000000006" x="558.75" y="0"/><rect class="huge_met1 met1" height="39.112500000000004" width="52.150000000000006" x="558.75" y="91.26250000000002"/><line stroke="black" stroke-width="1" x1="610.9" x2="610.9" y1="39.112500000000004" y2="91.26250000000002"/><line stroke="black" stroke-width="1" x1="610.9" x2="614.5107478449761" y1="91.26250000000002" y2="85.00868473250131"/><line stroke="black" stroke-width="1" x1="610.9" x2="607.2892521550239" y1="91.26250000000002" y2="85.00868473250131"/><line stroke="black" stroke-width="1" x1="610.9" x2="610.9" y1="91.26250000000002" y2="39.112500000000004"/><line stroke="black" stroke-width="1" x1="610.9" x2="607.2892521550239" y1="39.112500000000004" y2="45.36631526749872"/><line stroke="black" stroke-width="1" x1="610.9" x2="614.5107478449761" y1="39.112500000000004" y2="45.36631526749872"/><text x="615.9" y="57.737500000000004">space &gt;= 0.280&#181;m</text><text x="615.9" y="76.36250000000001">(m1.3a)</text></svg>
