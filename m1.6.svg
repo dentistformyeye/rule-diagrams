@@ -1,8 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 254.2449576907134 199.8674365360701"><defs><style type="text/css">
     .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
     .met1 {fill:rgb(190,144,217);}
     .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
     
 </style></defs><rect class="met1" height="199.8674365360701" width="133.2449576907134" x="0" y="0"/><text x="138.2449576907134" y="99.93371826803505">area &gt;= 0.083&#181;m2</text><text x="138.2449576907134" y="118.43371826803505">(m1.6)</text></svg>

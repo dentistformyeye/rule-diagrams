@@ -7,12 +7,20 @@ import sys
 from lxml import etree
 
 cm=37
+checkmark=u"\u2713"
+no=u"\u20E0"
 classes="""
     .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
     .met1 {fill:rgb(190,144,217);}
     .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
     
 """
 
@@ -53,7 +61,28 @@ def draw():
             tree=etree.parse(fn)
             svgTag=tree.getroot()
             w=max(width,len(descText)*7.25)
-            h=height+1.5*cm
+            h=height+1.5*cm+5
+            svgTag.set("viewBox",f"0 0 {w} {h}")
+            tree.write(fn)
+            
+        elif "exact" in ruleType:
+            d=svgwrite.Drawing(filename=fn)
+            d.defs.add(d.style(classes))
+            x1=0
+            y1=0
+            width=float(value)*25*cm
+            height=width*1.5
+            d.add(d.rect(insert=(x1,y1),size=(width,height),class_=materials))
+            arrow(d,x1,height+0.5*cm,x1+width,height+0.5*cm)
+            arrow(d,x1+width,height+0.5*cm,x1,height+0.5*cm)
+            descText=f"width >= {value}µm, width <= {value}µm"
+            d.add(d.text(descText,insert=(x1,height+1*cm)))
+            d.add(d.text(nameText,insert=(x1,height+1.5*cm)))
+            d.save()
+            tree=etree.parse(fn)
+            svgTag=tree.getroot()
+            w=max(width,len(descText)*7.25)
+            h=height+1.5*cm+5
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
@@ -80,7 +109,7 @@ def draw():
             tree=etree.parse(fn)
             svgTag=tree.getroot()
             w=x1+width+1*cm+len(descTextH)*7.25
-            h=height+1.5*cm
+            h=height+1.5*cm+5
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
@@ -104,13 +133,13 @@ def draw():
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=x2+width
-            h=height+1*cm
+            w=max(x2+width,x1+width+len(descText)*7.25)
+            h=height+1*cm+5
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
         if "extend" in ruleType:
-            if "exempt" not in ruleType:
+            if "extend" not in ruleType:
                 d=svgwrite.Drawing(filename=fn)
                 d.defs.add(d.style(classes))
                 x=0
@@ -223,13 +252,36 @@ def draw():
             tree=etree.parse(fn)
             svgTag=tree.getroot()
             w=xOut+widthOut+1*cm+len(descTextA)*7.25
-            h=yOut+heightOut+2*cm
+            h=yOut+heightOut+2*cm+5
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
     elif "noOverlap" in ruleType:
         if " " not in ruleType:
-            print()
+            d=svgwrite.Drawing(filename=fn)
+            d.defs.add(d.style(classes))
+            top,bottom=materials.split(" ")
+            widthT=0.100*25*cm
+            heightT=widthT*3
+            widthB=heightT
+            heightB=widthT
+            xB=0
+            yB=heightT/3
+            xT=widthB/3
+            yT=0
+            d.add(d.rect(insert=(xB,yB),size=(widthB,heightB),class_=bottom,style="fill-opacity:0.8;"))
+            d.add(d.rect(insert=(xT,yT),size=(widthT,heightT),class_=top))
+            d.add(d.text(no,insert=(xB,heightT+1.5*cm),class_="no"))
+            descText=f"{top} cannot overlap {bottom}"
+            d.add(d.text(descText,insert=(xB,heightT+2*cm)))
+            d.add(d.text(nameText,insert=(xB,heightT+2.5*cm)))
+            d.save()
+            tree=etree.parse(fn)
+            svgTag=tree.getroot()
+            w=max(widthB,len(descText)*7.25)
+            h=heightT+2.5*cm+5
+            svgTag.set("viewBox",f"0 0 {w} {h}")
+            tree.write(fn)
 
 
 def usage():

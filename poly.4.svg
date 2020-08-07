@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 208.125 146.0625"><defs><style type="text/css">
+    .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(190,144,217);}
+    .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
+    
+</style></defs><rect class="poly diff" height="104.0625" width="69.375" x="0" y="0"/><rect class="poly diff" height="104.0625" width="69.375" x="138.75" y="0"/><line stroke="black" stroke-width="1" x1="69.375" x2="138.75" y1="104.0625" y2="104.0625"/><line stroke="black" stroke-width="1" x1="138.75" x2="131.53694256920133" y1="104.0625" y2="99.89791718776058"/><line stroke="black" stroke-width="1" x1="138.75" x2="131.53694256920133" y1="104.0625" y2="108.22708281223942"/><line stroke="black" stroke-width="1" x1="138.75" x2="69.375" y1="104.0625" y2="104.0625"/><line stroke="black" stroke-width="1" x1="69.375" x2="76.58805743079867" y1="104.0625" y2="108.22708281223942"/><line stroke="black" stroke-width="1" x1="69.375" x2="76.58805743079867" y1="104.0625" y2="99.89791718776058"/><text x="69.375" y="122.5625">space &gt;= 0.075&#181;m</text><text x="69.375" y="141.0625">(poly.4)</text></svg>

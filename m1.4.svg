@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 375.0 407.0"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 375.0 412.0"><defs><style type="text/css">
     .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
     .met1 {fill:rgb(190,144,217);}
     .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
     
 </style></defs><rect class="met1" height="333.0" width="222.0" x="0" y="0"/><rect class="mcon" height="111.0" width="111.0" x="55.5" y="111.0"/><line stroke="black" x1="0" x2="0" y1="333.0" y2="370.0"/><line stroke="black" x1="55.5" x2="55.5" y1="333.0" y2="370.0"/><line stroke="black" stroke-width="1" x1="0" x2="55.5" y1="351.5" y2="351.5"/><line stroke="black" stroke-width="1" x1="55.5" x2="49.04844530364967" y1="351.5" y2="347.77508389356217"/><line stroke="black" stroke-width="1" x1="55.5" x2="49.04844530364967" y1="351.5" y2="355.22491610643783"/><line stroke="black" stroke-width="1" x1="55.5" x2="0" y1="351.5" y2="351.5"/><line stroke="black" stroke-width="1" x1="0" x2="6.45155469635033" y1="351.5" y2="355.22491610643783"/><line stroke="black" stroke-width="1" x1="0" x2="6.45155469635033" y1="351.5" y2="347.77508389356217"/><text x="0" y="388.5">space &gt;= 0.030&#181;m</text><text x="0" y="407.0">(m1.4)</text><line stroke="black" x1="222.0" x2="259.0" y1="0" y2="0"/><line stroke="black" x1="222.0" x2="259.0" y1="111.0" y2="111.0"/><line stroke="black" stroke-width="1" x1="240.5" x2="240.5" y1="0" y2="111.0"/><line stroke="black" stroke-width="1" x1="240.5" x2="245.76782687642637" y1="111.0" y2="101.87612385002953"/><line stroke="black" stroke-width="1" x1="240.5" x2="235.23217312357363" y1="111.0" y2="101.87612385002953"/><line stroke="black" stroke-width="1" x1="240.5" x2="240.5" y1="111.0" y2="0"/><line stroke="black" stroke-width="1" x1="240.5" x2="235.23217312357363" y1="0" y2="9.12387614997047"/><line stroke="black" stroke-width="1" x1="240.5" x2="245.76782687642637" y1="0" y2="9.12387614997047"/><text x="259.0" y="23.5">space &gt;= 0.060&#181;m</text><text x="259.0" y="42">(m1.5)</text></svg>
