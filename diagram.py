@@ -269,8 +269,8 @@ def draw():
             yB=heightT/3
             xT=widthB/3
             yT=0
-            d.add(d.rect(insert=(xB,yB),size=(widthB,heightB),class_=bottom,style="fill-opacity:0.8;"))
-            d.add(d.rect(insert=(xT,yT),size=(widthT,heightT),class_=top))
+            d.add(d.rect(insert=(xB,yB),size=(widthB,heightB),class_=bottom))
+            d.add(d.rect(insert=(xT,yT),size=(widthT,heightT),class_=top,style="fill-opacity:0.66;"))
             d.add(d.text(no,insert=(xB,heightT+1.5*cm),class_="no"))
             descText=f"{top} cannot overlap {bottom}"
             d.add(d.text(descText,insert=(xB,heightT+2*cm)))
