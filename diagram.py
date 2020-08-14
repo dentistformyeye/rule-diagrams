@@ -6,7 +6,11 @@ import os
 import sys
 from lxml import etree
 
-cm=37
+charW=7.25 #Approximate default width of an svgwrite text char
+mu=5 #Minimum unit. The min margin around text
+cm=37 #Half should be > the default height of an svgwrite text char
+hu=0.5*cm #Half unit. Should be 0.5*cm
+keyH=0.7*hu #Size of blocks for the key. Should be < hu
 checkmark=u"\u2713"
 no=u"\u20E0"
 classes="""
@@ -16,8 +20,7 @@ classes="""
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217);}
-    .huge_met1 {fill:rgb(190,144,217);}
+    .met1, .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
@@ -28,6 +31,9 @@ def sqrt(x):
     xF=float(x)
     return math.sqrt(xF) if (xF>=0) else -math.sqrt(-xF)
 
+def textW(string):
+    return len(string)*charW
+
 def arrow(d,x1,y1,x2,y2,s="black",sw=1):
     cos=0.866
     sin=0.5
@@ -37,6 +43,11 @@ def arrow(d,x1,y1,x2,y2,s="black",sw=1):
     d.add(d.line((x2,y2),(x2-(dx*cos+dy*-sin),y2-(dx*sin+dy*cos)),stroke=s,stroke_width=sw))
     d.add(d.line((x2,y2),(x2-(dx*cos+dy*sin),y2-(dx*-sin+dy*cos)),stroke=s,stroke_width=sw))
 
+def keyRow(d,keyY,material,keyH=0.7*hu):
+    d.add(d.rect(insert=(0,keyY-keyH),size=(keyH,keyH),class_=material))
+    d.add(d.text(material,insert=(keyH+5,keyY)))
+    return keyY+hu
+
 folderPath=os.getcwd()
 def draw():
     print(f"{name} {ruleType}")
@@ -44,7 +55,7 @@ def draw():
     fp=folderPath+fn
     nameText=f"{name}"
     if "width" in ruleType:
-        if " " not in ruleType:
+        if " " not in ruleType or "exact" in ruleType:
             d=svgwrite.Drawing(filename=fn)
             d.defs.add(d.style(classes))
             x1=0
@@ -55,39 +66,22 @@ def draw():
             arrow(d,x1,height+0.5*cm,x1+width,height+0.5*cm)
             arrow(d,x1+width,height+0.5*cm,x1,height+0.5*cm)
             descText=f"width >= {value}µm"
+            if "exact" in ruleType:
+                descText+=f", width <= {value}µm"
             d.add(d.text(descText,insert=(x1,height+1*cm)))
             d.add(d.text(nameText,insert=(x1,height+1.5*cm)))
+            keyY=y1+height+2.0*cm
+            keyRow(d,keyY,materials)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=max(width,len(descText)*7.25)
-            h=height+1.5*cm+5
-            svgTag.set("viewBox",f"0 0 {w} {h}")
-            tree.write(fn)
-            
-        elif "exact" in ruleType:
-            d=svgwrite.Drawing(filename=fn)
-            d.defs.add(d.style(classes))
-            x1=0
-            y1=0
-            width=float(value)*25*cm
-            height=width*1.5
-            d.add(d.rect(insert=(x1,y1),size=(width,height),class_=materials))
-            arrow(d,x1,height+0.5*cm,x1+width,height+0.5*cm)
-            arrow(d,x1+width,height+0.5*cm,x1,height+0.5*cm)
-            descText=f"width >= {value}µm, width <= {value}µm"
-            d.add(d.text(descText,insert=(x1,height+1*cm)))
-            d.add(d.text(nameText,insert=(x1,height+1.5*cm)))
-            d.save()
-            tree=etree.parse(fn)
-            svgTag=tree.getroot()
-            w=max(width,len(descText)*7.25)
-            h=height+1.5*cm+5
+            w=max(width,textW(descText),keyH+mu+textW(materials))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
     if "size" in ruleType:
-        if "exact" in ruleType:
+        if " " not in ruleType or "exact" in ruleType:
             d=svgwrite.Drawing(filename=fn)
             d.defs.add(d.style(classes))
             valueW,valueH=value.split(" ")
@@ -98,18 +92,24 @@ def draw():
             d.add(d.rect(insert=(x1,y1),size=(width,height),class_=materials))
             arrow(d,x1,height+0.5*cm,x1+width,height+0.5*cm)
             arrow(d,x1+width,height+0.5*cm,x1,height+0.5*cm)
-            descTextW=f"width >= {valueW}µm, width <= {valueW}µm"
+            descTextW=f"width >= {valueW}µm"
+            if "exact" in ruleType:
+                descTextW+=f", width <= {valueW}µm"
             d.add(d.text(descTextW,insert=(x1,height+1*cm)))
             d.add(d.text(nameText,insert=(x1,height+1.5*cm)))
             arrow(d,x1+width+0.5*cm,y1,x1+width+0.5*cm,y1+height)
             arrow(d,x1+width+0.5*cm,y1+height,x1+width+0.5*cm,y1)
-            descTextH=f"height >= {valueH}µm, height <= {valueH}µm"
+            descTextH=f"height >= {valueH}µm"
+            if "exact" in ruleType:
+                descTextH+=f", height <= {valueH}µm"
             d.add(d.text(descTextH,insert=(x1+width+1*cm,y1+0.5*cm)))
+            keyY=y1+height+2.0*cm
+            keyRow(d,keyY,materials)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=x1+width+1*cm+len(descTextH)*7.25
-            h=height+1.5*cm+5
+            w=max(x1+width+1*cm+textW(descTextH),keyH+mu+textW(materials))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
@@ -117,56 +117,65 @@ def draw():
         if " " not in ruleType:
             d=svgwrite.Drawing(filename=fn)
             d.defs.add(d.style(classes))
+            left,right=materials.split(" ")
             x1=0
             y1=0
             width=float(value)*25*cm
             height=width*1.5
             x2=width*2
             y2=0
-            d.add(d.rect(insert=(x1,y1),size=(width,height),class_=materials))
-            d.add(d.rect(insert=(x2,y2),size=(width,height),class_=materials))
+            d.add(d.rect(insert=(x1,y1),size=(width,height),class_=left))
+            d.add(d.rect(insert=(x2,y2),size=(width,height),class_=right))
             arrow(d,x1+width,y1+height,x2,y1+height)
             arrow(d,x2,y1+height,x1+width,y1+height)
             descText=f"space >= {value}µm"
             d.add(d.text(descText,insert=(x1+width,y1+height+0.5*cm)))
             d.add(d.text(nameText,insert=(x1+width,y1+height+1*cm)))
+            keyY=y1+height+1.5*cm
+            keyY=keyRow(d,keyY,left)
+            if right != left:
+                keyRow(d,keyY,right)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=max(x2+width,x1+width+len(descText)*7.25)
-            h=height+1*cm+5
+            w=max(x2+width,x1+width+textW(descText),keyH+mu+textW(left),keyH+mu+textW(right))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
-        if "extend" in ruleType:
-            if "extend" not in ruleType:
-                d=svgwrite.Drawing(filename=fn)
-                d.defs.add(d.style(classes))
-                x=0
-                y=0
-                width=3*5*cm #Huge metal1 width is at least 3µm
-                height=width
-                widthS=float(value)*5*cm
-                heightS=widthS*.75
-                x1=x+width
-                y1=0
-                x2=x+width
-                y2=y1+heightS+widthS
-                d.add(d.rect(insert=(x,y),size=(width,height),class_=materials))
-                d.add(d.rect(insert=(x1,y1),size=(widthS,heightS),class_=materials))
-                d.add(d.rect(insert=(x2,y2),size=(widthS,heightS),class_=materials))
-                arrow(d,x1+widthS,y1+heightS,x2+widthS,y2)
-                arrow(d,x2+widthS,y2,x1+widthS,y1+heightS)
-                descText=f"space >= {value}µm"
-                d.add(d.text(descText,insert=(x1+widthS+5,y1+heightS+0.5*cm)))
-                d.add(d.text(nameText,insert=(x1+widthS+5,y1+heightS+1*cm)))
-                d.save()
-                tree=etree.parse(fn)
-                svgTag=tree.getroot()
-                w=x1+width+5+len(descText)*7.25
-                h=height
-                svgTag.set("viewBox",f"0 0 {w} {h}")
-                tree.write(fn)
+        if "extend" in ruleType and "exempt" not in ruleType:
+            d=svgwrite.Drawing(filename=fn)
+            d.defs.add(d.style(classes))
+            main, extension=materials.split(" ")
+            x=0
+            y=0
+            width=3*5*cm #Huge metal1 width is at least 3µm
+            height=width
+            widthS=float(value)*5*cm
+            heightS=widthS*.75
+            x1=x+width
+            y1=0
+            x2=x+width
+            y2=y1+heightS+widthS
+            d.add(d.rect(insert=(x,y),size=(width,height),class_=main))
+            d.add(d.rect(insert=(x1,y1),size=(widthS,heightS),class_=extension))
+            d.add(d.rect(insert=(x2,y2),size=(widthS,heightS),class_=extension))
+            arrow(d,x1+widthS,y1+heightS,x2+widthS,y2)
+            arrow(d,x2+widthS,y2,x1+widthS,y1+heightS)
+            descText=f"space >= {value}µm"
+            d.add(d.text(descText,insert=(x1+widthS+5,y1+heightS+0.5*cm)))
+            d.add(d.text(nameText,insert=(x1+widthS+5,y1+heightS+1*cm)))
+            keyY=y+height+1*cm
+            keyY=keyRow(d,keyY,main,keyH*2)
+            if extension != main:
+                keyRow(d,keyY,extension)
+            d.save()
+            tree=etree.parse(fn)
+            svgTag=tree.getroot()
+            w=max(x1+width+5+textW(descText),keyH+mu+textW(main),keyH+mu+textW(extension))
+            h=keyY+mu
+            svgTag.set("viewBox",f"0 0 {w} {h}")
+            tree.write(fn)
             
     elif "area" in ruleType:
         if " " not in ruleType:
@@ -181,11 +190,13 @@ def draw():
             descText=f"area >= {value}µm2"
             d.add(d.text(descText,insert=(x+width+5,height/2)))
             d.add(d.text(nameText,insert=((x+width+5,height/2+0.5*cm))))
+            keyY=y+height+0.5*cm
+            keyRow(d,keyY,materials)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=x+width+5+len(descText)*7.25
-            h=height
+            w=max(x+width+5+textW(descText),keyH+mu+textW(materials))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
@@ -206,11 +217,13 @@ def draw():
             descText=f"area >= {value}µm2"
             d.add(d.text(descText,insert=(xOut+widthOut+0.5*cm+5,yOut+0.5*cm)))
             d.add(d.text(nameText,insert=(xOut+widthOut+0.5*cm+5,yOut+1*cm)))
+            keyY=yOut+heightOut+0.5*cm
+            keyRow(d,keyY,materials)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=xOut+widthOut+0.5*cm+5+len(descText)*7.25
-            h=heightOut
+            w=max(xOut+widthOut+0.5*cm+5+textW(descText),keyH+mu+textW(materials))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
@@ -231,8 +244,6 @@ def draw():
             heightOut=float(valueA)*50*2*cm+heightIn
             d.add(d.rect(insert=(xOut,yOut),size=(widthOut,heightOut),class_=outer))
             d.add(d.rect(insert=(xIn,yIn),size=(widthIn,heightIn),class_=inner))
-            #d.add(d.line((xIn,yIn),(xIn+widthIn,yIn+heightIn),stroke="black"))
-            #d.add(d.line((xIn,yIn+heightIn),(xIn+widthIn,yIn),stroke="black")) #Contact complete
             d.add(d.line((xOut,yOut+heightOut),(xOut,yOut+heightOut+1*cm),stroke="black"))
             d.add(d.line((xIn,yOut+heightOut),(xIn,yOut+heightOut+1*cm),stroke="black"))
             arrow(d,xOut,yOut+heightOut+0.5*cm,xIn,yOut+heightOut+0.5*cm)
@@ -248,16 +259,20 @@ def draw():
             d.add(d.text(descTextA,insert=(xOut+widthOut+1*cm,yOut+0.5*cm+5)))
             nameTextA=f"{nameA}"
             d.add(d.text(nameTextA,insert=(xOut+widthOut+1*cm,yOut+1*cm+5))) #Enclosure adjacent complete
+            keyY=yOut+heightOut+2.5*cm
+            keyY=keyRow(d,keyY,outer)
+            if inner != outer:
+                keyRow(d,keyY,inner)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=xOut+widthOut+1*cm+len(descTextA)*7.25
-            h=yOut+heightOut+2*cm+5
+            w=max(xOut+widthOut+1*cm+textW(descTextA),keyH+mu+textW(outer),keyH+mu+textW(inner))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
             
     elif "noOverlap" in ruleType:
-        if " " not in ruleType:
+        if " " not in ruleType or "innerCorner" in ruleType:
             d=svgwrite.Drawing(filename=fn)
             d.defs.add(d.style(classes))
             top,bottom=materials.split(" ")
@@ -269,17 +284,28 @@ def draw():
             yB=heightT/3
             xT=widthB/3
             yT=0
-            d.add(d.rect(insert=(xB,yB),size=(widthB,heightB),class_=bottom))
+            d.add(d.rect(insert=(xB,yB),size=(widthB/2,heightB),class_=bottom))
+            classB=bottom
+            if "innerCorner" in ruleType:
+                classB="background"
+            d.add(d.rect(insert=(xB+widthB/2,yB),size=(widthB/2,heightB),class_=classB))
+            d.add(d.rect(insert=(xB,yB+heightB/2),size=(widthB,heightB/2),class_=bottom))
+            if "rectOnly" not in top:
+                
             d.add(d.rect(insert=(xT,yT),size=(widthT,heightT),class_=top,style="fill-opacity:0.66;"))
             d.add(d.text(no,insert=(xB,heightT+1.5*cm),class_="no"))
             descText=f"{top} cannot overlap {bottom}"
             d.add(d.text(descText,insert=(xB,heightT+2*cm)))
             d.add(d.text(nameText,insert=(xB,heightT+2.5*cm)))
+            keyY=yT+heightT+3*cm
+            keyY=keyRow(d,keyY,top)
+            if bottom != top:
+                keyRow(d,keyY,bottom)
             d.save()
             tree=etree.parse(fn)
             svgTag=tree.getroot()
-            w=max(widthB,len(descText)*7.25)
-            h=heightT+2.5*cm+5
+            w=max(widthB,textW(descText),keyH+mu+textW(top),keyH+mu+textW(bottom))
+            h=keyY+mu
             svgTag.set("viewBox",f"0 0 {w} {h}")
             tree.write(fn)
 
@@ -333,4 +359,9 @@ if __name__ == '__main__':
         sys.exit(0)
     """
     callback_function(arguments, optionlist)
-    
+
+
+
+
+poly
+poly$rectOnly&no_90_degree_turns diff

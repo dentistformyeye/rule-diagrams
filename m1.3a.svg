@@ -1,8 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 1231.0 555"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 1231.0 615.5"><defs><style type="text/css">
     .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217);}
-    .huge_met1 {fill:rgb(190,144,217);}
+    .met1, .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="huge_met1 met1" height="555" width="555" x="0" y="0"/><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="0"/><rect class="huge_met1 met1" height="38.85" width="51.800000000000004" x="555" y="90.65"/><line stroke="black" stroke-width="1" x1="606.8" x2="606.8" y1="38.85" y2="90.65"/><line stroke="black" stroke-width="1" x1="606.8" x2="610.3986108430893" y1="90.65" y2="84.41720601976931"/><line stroke="black" stroke-width="1" x1="606.8" x2="603.2013891569106" y1="90.65" y2="84.41720601976931"/><line stroke="black" stroke-width="1" x1="606.8" x2="606.8" y1="90.65" y2="38.85"/><line stroke="black" stroke-width="1" x1="606.8" x2="603.2013891569106" y1="38.85" y2="45.0827939802307"/><line stroke="black" stroke-width="1" x1="606.8" x2="610.3986108430893" y1="38.85" y2="45.0827939802307"/><text x="611.8" y="57.35">space &gt;= 0.280&#181;m</text><text x="611.8" y="75.85">(m1.3a)</text></svg>
+</style></defs><rect class="huge_met1" height="555" width="555" x="0" y="0"/><rect class="met1" height="38.85" width="51.800000000000004" x="555" y="0"/><rect class="met1" height="38.85" width="51.800000000000004" x="555" y="90.65"/><line stroke="black" stroke-width="1" x1="606.8" x2="606.8" y1="38.85" y2="90.65"/><line stroke="black" stroke-width="1" x1="606.8" x2="610.3986108430893" y1="90.65" y2="84.41720601976931"/><line stroke="black" stroke-width="1" x1="606.8" x2="603.2013891569106" y1="90.65" y2="84.41720601976931"/><line stroke="black" stroke-width="1" x1="606.8" x2="606.8" y1="90.65" y2="38.85"/><line stroke="black" stroke-width="1" x1="606.8" x2="603.2013891569106" y1="38.85" y2="45.0827939802307"/><line stroke="black" stroke-width="1" x1="606.8" x2="610.3986108430893" y1="38.85" y2="45.0827939802307"/><text x="611.8" y="57.35">space &gt;= 0.280&#181;m</text><text x="611.8" y="75.85">(m1.3a)</text><rect class="huge_met1" height="25.9" width="25.9" x="0" y="566.1"/><text x="30.9" y="592">huge_met1</text><rect class="met1" height="12.95" width="12.95" x="0" y="597.55"/><text x="17.95" y="610.5">met1</text></svg>

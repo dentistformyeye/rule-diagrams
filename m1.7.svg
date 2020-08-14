@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 485.6033082765896 346.1033082765896"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 485.6033082765896 369.6033082765896"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1 {fill:rgb(190,144,217);}
-    .huge_met1 {fill:rgb(190,144,217);}
+    .met1, .huge_met1 {fill:rgb(190,144,217);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="met1" height="346.1033082765896" width="346.1033082765896" x="0" y="0"/><rect class="background" height="173.0516541382948" width="173.0516541382948" x="86.5258270691474" y="86.5258270691474"/><line stroke="black" stroke-width="1" x1="364.6033082765896" x2="129.7887406037211" y1="18.5" y2="129.7887406037211"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="148.33370443721464" y1="129.7887406037211" y2="128.3148355370896"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="137.78435656145848" y1="129.7887406037211" y2="112.9911751495429"/><text x="369.6033082765896" y="18.5">area &gt;= 0.140&#181;m2</text><text x="369.6033082765896" y="37">(m1.7)</text></svg>
+</style></defs><rect class="met1" height="346.1033082765896" width="346.1033082765896" x="0" y="0"/><rect class="background" height="173.0516541382948" width="173.0516541382948" x="86.5258270691474" y="86.5258270691474"/><line stroke="black" stroke-width="1" x1="364.6033082765896" x2="129.7887406037211" y1="18.5" y2="129.7887406037211"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="148.33370443721464" y1="129.7887406037211" y2="128.3148355370896"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="137.78435656145848" y1="129.7887406037211" y2="112.9911751495429"/><text x="369.6033082765896" y="18.5">area &gt;= 0.140&#181;m2</text><text x="369.6033082765896" y="37">(m1.7)</text><rect class="met1" height="12.95" width="12.95" x="0" y="351.6533082765896"/><text x="17.95" y="364.6033082765896">met1</text></svg>
