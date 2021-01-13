@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 166.875 155.3125"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 191.14999999999998 143.05"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="poly" height="76.3125" width="50.875" x="0" y="0"/><rect class="tap" height="76.3125" width="50.875" x="101.75" y="0"/><line stroke="black" stroke-width="1" x1="50.875" x2="101.75" y1="76.3125" y2="76.3125"/><line stroke="black" stroke-width="1" x1="101.75" x2="95.57310664654149" y1="76.3125" y2="72.74616434557822"/><line stroke="black" stroke-width="1" x1="101.75" x2="95.57310664654149" y1="76.3125" y2="79.87883565442178"/><line stroke="black" stroke-width="1" x1="101.75" x2="50.875" y1="76.3125" y2="76.3125"/><line stroke="black" stroke-width="1" x1="50.875" x2="57.05189335345852" y1="76.3125" y2="79.87883565442178"/><line stroke="black" stroke-width="1" x1="50.875" x2="57.05189335345852" y1="76.3125" y2="72.74616434557822"/><text x="50.875" y="94.8125">space &gt;= 0.055&#181;m</text><text x="50.875" y="113.3125">(poly.5)</text><rect class="poly" height="12.95" width="12.95" x="0" y="118.8625"/><text x="17.95" y="131.8125">poly</text><rect class="tap" height="12.95" width="12.95" x="0" y="137.3625"/><text x="17.95" y="150.3125">tap</text></svg>
+</style></defs><rect class="poly" height="61.05" width="61.05" x="0" y="0"/><rect class="tap" height="61.05" width="61.05" x="122.1" y="0"/><line stroke="black" stroke-width="1" x1="61.05" x2="122.1" y1="61.05" y2="61.05"/><line stroke="black" stroke-width="1" x1="122.1" x2="115.33355235001407" y1="61.05" y2="57.14327502887649"/><line stroke="black" stroke-width="1" x1="122.1" x2="115.33355235001407" y1="61.05" y2="64.9567249711235"/><line stroke="black" stroke-width="1" x1="122.1" x2="61.05" y1="61.05" y2="61.05"/><line stroke="black" stroke-width="1" x1="61.05" x2="67.81644764998592" y1="61.05" y2="64.9567249711235"/><line stroke="black" stroke-width="1" x1="61.05" x2="67.81644764998592" y1="61.05" y2="57.14327502887649"/><text x="69.05" y="87.55">space &gt;= 0.055&#181;m</text><text x="69.05" y="114.05">(poly.5)</text><rect class="poly" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="103.6"/><text x="20.95" y="116.55">poly</text><rect class="tap" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="122.10000000000001"/><text x="20.95" y="135.05">tap</text></svg>

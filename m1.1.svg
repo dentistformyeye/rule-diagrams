@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 129.50000000000003 273.25000000000006"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 155.4 315.1"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="met1" height="194.25000000000006" width="129.50000000000003" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="129.50000000000003" y1="212.75000000000006" y2="212.75000000000006"/><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="119.64508741794228" y1="212.75000000000006" y2="207.06009666162953"/><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="119.64508741794228" y1="212.75000000000006" y2="218.43990333837058"/><line stroke="black" stroke-width="1" x1="129.50000000000003" x2="0" y1="212.75000000000006" y2="212.75000000000006"/><line stroke="black" stroke-width="1" x1="0" x2="9.854912582057745" y1="212.75000000000006" y2="218.43990333837058"/><line stroke="black" stroke-width="1" x1="0" x2="9.854912582057745" y1="212.75000000000006" y2="207.06009666162953"/><text x="0" y="231.25000000000006">width &gt;= 0.140&#181;m</text><text x="0" y="249.75000000000006">(m1.1)</text><rect class="met1" height="12.95" width="12.95" x="0" y="255.30000000000007"/><text x="17.95" y="268.25000000000006">met1</text></svg>
+</style></defs><rect class="met1" height="233.10000000000002" width="155.4" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="155.4" y1="251.60000000000002" y2="251.60000000000002"/><line stroke="black" stroke-width="1" x1="155.4" x2="144.60448415313098" y1="251.60000000000002" y2="245.36702318310105"/><line stroke="black" stroke-width="1" x1="155.4" x2="144.60448415313098" y1="251.60000000000002" y2="257.83297681689896"/><line stroke="black" stroke-width="1" x1="155.4" x2="0" y1="251.60000000000002" y2="251.60000000000002"/><line stroke="black" stroke-width="1" x1="0" x2="10.795515846869014" y1="251.60000000000002" y2="257.83297681689896"/><line stroke="black" stroke-width="1" x1="0" x2="10.795515846869014" y1="251.60000000000002" y2="245.36702318310105"/><text x="0" y="270.1">width &gt;= 0.140&#181;m</text><text x="0" y="288.6">(m1.1)</text><rect class="met1" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="294.15000000000003"/><text x="20.95" y="307.1">met1</text></svg>

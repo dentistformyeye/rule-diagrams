@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 254.2449576907134 223.3674365360701"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 215.94697461442803 146.42046192164204"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="met1" height="199.8674365360701" width="133.2449576907134" x="0" y="0"/><text x="138.2449576907134" y="99.93371826803505">area &gt;= 0.083&#181;m2</text><text x="138.2449576907134" y="118.43371826803505">(m1.6)</text><rect class="met1" height="12.95" width="12.95" x="0" y="205.4174365360701"/><text x="17.95" y="218.3674365360701">met1</text></svg>
+</style></defs><rect class="met1" height="119.92046192164204" width="79.94697461442803" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="15.989394922885607" y1="0" y2="0"/><line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="15.989394922885607"/><line stroke="black" stroke-width="1" x1="79.94697461442803" x2="63.95757969154242" y1="119.92046192164204" y2="119.92046192164204"/><line stroke="black" stroke-width="1" x1="79.94697461442803" x2="79.94697461442803" y1="119.92046192164204" y2="103.93106699875644"/><text x="87.94697461442803" y="59.96023096082102">area &gt;= 0.083&#181;m2</text><text x="87.94697461442803" y="78.46023096082102">(m1.6)</text><rect class="met1" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="125.47046192164204"/><text x="20.95" y="138.42046192164204">met1</text></svg>

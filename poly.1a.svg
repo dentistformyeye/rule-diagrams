@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 138.75 287.125"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 166.5 331.75"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="poly" height="208.125" width="138.75" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="138.75" y1="226.625" y2="226.625"/><line stroke="black" stroke-width="1" x1="138.75" x2="128.54919635518849" y1="226.625" y2="220.73539050530513"/><line stroke="black" stroke-width="1" x1="138.75" x2="128.54919635518849" y1="226.625" y2="232.51460949469487"/><line stroke="black" stroke-width="1" x1="138.75" x2="0" y1="226.625" y2="226.625"/><line stroke="black" stroke-width="1" x1="0" x2="10.20080364481152" y1="226.625" y2="232.51460949469487"/><line stroke="black" stroke-width="1" x1="0" x2="10.20080364481152" y1="226.625" y2="220.73539050530513"/><text x="0" y="245.125">width &gt;= 0.150&#181;m</text><text x="0" y="263.625">(poly.1a)</text><rect class="poly" height="12.95" width="12.95" x="0" y="269.175"/><text x="17.95" y="282.125">poly</text></svg>
+</style></defs><rect class="poly" height="249.75" width="166.5" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="166.5" y1="268.25" y2="268.25"/><line stroke="black" stroke-width="1" x1="166.5" x2="155.32557947811162" y1="268.25" y2="261.798256049718"/><line stroke="black" stroke-width="1" x1="166.5" x2="155.32557947811162" y1="268.25" y2="274.701743950282"/><line stroke="black" stroke-width="1" x1="166.5" x2="0" y1="268.25" y2="268.25"/><line stroke="black" stroke-width="1" x1="0" x2="11.174420521888372" y1="268.25" y2="274.701743950282"/><line stroke="black" stroke-width="1" x1="0" x2="11.174420521888372" y1="268.25" y2="261.798256049718"/><text x="0" y="286.75">width &gt;= 0.150&#181;m</text><text x="0" y="305.25">(poly.1a)</text><rect class="poly" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="310.8"/><text x="20.95" y="323.75">poly</text></svg>

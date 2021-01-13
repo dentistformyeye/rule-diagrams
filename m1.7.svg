@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 485.6033082765896 369.6033082765896"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 486.759175945526 358.759175945526"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="met1" height="346.1033082765896" width="346.1033082765896" x="0" y="0"/><rect class="background" height="173.0516541382948" width="173.0516541382948" x="86.5258270691474" y="86.5258270691474"/><line stroke="black" stroke-width="1" x1="364.6033082765896" x2="129.7887406037211" y1="18.5" y2="129.7887406037211"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="148.33370443721464" y1="129.7887406037211" y2="128.3148355370896"/><line stroke="black" stroke-width="1" x1="129.7887406037211" x2="137.78435656145848" y1="129.7887406037211" y2="112.9911751495429"/><text x="369.6033082765896" y="18.5">area &gt;= 0.140&#181;m2</text><text x="369.6033082765896" y="37">(m1.7)</text><rect class="met1" height="12.95" width="12.95" x="0" y="351.6533082765896"/><text x="17.95" y="364.6033082765896">met1</text></svg>
+</style></defs><rect class="met1" height="332.259175945526" width="332.259175945526" x="0" y="0"/><rect class="background" height="166.129587972763" width="166.129587972763" x="83.0647939863815" y="83.0647939863815"/><line stroke="black" stroke-width="1" x1="350.759175945526" x2="124.59719097957225" y1="18.5" y2="124.59719097957225"/><line stroke="black" stroke-width="1" x1="124.59719097957225" x2="142.7708649523987" y1="124.59719097957225" y2="123.19643016087612"/><line stroke="black" stroke-width="1" x1="124.59719097957225" x2="132.47051588163552" y1="124.59719097957225" y2="108.15774720770652"/><text x="358.759175945526" y="18.5">area &gt;= 0.140&#181;m2</text><text x="358.759175945526" y="37.0">(m1.7)</text><rect class="met1" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="337.809175945526"/><text x="20.95" y="350.759175945526">met1</text></svg>

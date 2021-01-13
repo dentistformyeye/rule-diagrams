@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 333.0 489.0"><defs><style type="text/css">
+    .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
+    .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
+    
+</style></defs><rect class="diff" height="111.0" width="166.5" x="0" y="111.0"/><rect class="diff" height="111.0" width="166.5" x="166.5" y="111.0"/><rect class="diff" height="55.5" width="333.0" x="0" y="166.5"/><rect class="poly" height="199.8" style="fill-opacity:0.66;" width="55.5" x="111.0" y="0"/><rect class="poly" height="199.8" style="fill-opacity:0.66;" width="55.5" x="166.5" y="133.2"/><text class="no" x="0" y="388.5">&#8416;</text><text x="0" y="425.5">poly cannot make 90 degree turns over diff</text><text x="0" y="444.0">(poly.11)</text><rect class="poly" height="12.95" style="fill-opacity:0.66;" width="12.95" x="0" y="449.55"/><text x="20.95" y="462.5">poly</text><rect class="diff" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="468.05"/><text x="20.95" y="481.0">diff</text></svg>

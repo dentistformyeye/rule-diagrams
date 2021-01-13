@@ -3,15 +3,15 @@ Name,ShortDescription,Description,Materials,Flags,Value
 (poly.X.1a),,Min & max dummy_poly L is equal to min L allowed for corresponding device type (exempt rule for dummy_poly in cells listed on Table H3),,,
 (poly.1a),width,Width of poly,poly,,0.150
 (poly.1b),,Min channel length (poly width) for pfet overlapping lvtn (exempt rule for dummy_poly in cells listed on Table H3),,,0.350
-(poly.2),spacing,Spacing of poly to poly except for poly.c2 and poly.c3; Exempt cell: sr_bltd_eq where it is same as poly.c2,poly poly,,0.210
-(poly.3),width resistor,Min poly resistor width,poly,,0.330
-(poly.4),spacing,Spacing of poly on field to diff (parallel edges only),poly diff,P,0.075
+(poly.2),spacing#. See exemptions,Spacing of poly to poly except for poly.c2 and poly.c3; Exempt cell: sr_bltd_eq where it is same as poly.c2,poly poly,,0.210
+(poly.3),width,Min poly resistor width,poly#_resistor,,0.330
+(poly.4),spacing#. Parallel edges only,Spacing of poly on field to diff (parallel edges only),poly diff,P,0.075
 (poly.5),spacing,Spacing of poly on field to tap,poly tap,P,0.055
-(poly.6),,Spacing of poly on diff to abutting tap (min source),,P,0.300
+(poly.6),rectangle&spacing*poly tap*0.300*0.300 0*full,Spacing of poly on diff to abutting tap (min source),diff,P,0 0.300 0.900 0.900
 (poly.7),extend beyond,Extension of diff beyond poly (min drain),diff poly,P,0.250
 (poly.8),extend beyond,Extension of poly beyond diffusion (endcap),poly diff,P,0.130
-(poly.9),spacing resistor,Poly resistor spacing to poly or spacing (no overlap) to diff/tap,,,0.480
-(poly.10),noOverlap innerCorner,Poly can't overlap inner corners of diff,poly diff,,
-(poly.11),,No 90 deg turns of poly on diff,,,
-(poly.12),noOverlap,"(Poly NOT (nwell NOT hvi)) may not overlap tap; Rule exempted for cell name ""s8fgvr_n_fg2"" and gated_npn and inside UHVI.",poly tap,P,
-(poly.15),noOverlap resistor,Poly must not overlap diff:rs,,,
+(poly.9),,Poly resistor spacing to poly or spacing (no overlap) to diff/tap,,,0.480
+(poly.10),noOverlap innerCorners,Poly can't overlap inner corners of diff,poly diff,,
+(poly.11),noOverlap turns,No 90 deg turns of poly on diff,poly diff,,
+(poly.12),noOverlap#. See exemptions,"(Poly NOT (nwell NOT hvi)) may not overlap tap; Rule exempted for cell name ""s8fgvr_n_fg2"" and gated_npn and inside UHVI.",poly tap,P,
+(poly.15),noOverlap,Poly must not overlap diff:rs,poly diff#_resistor,,

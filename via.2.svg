@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 471.75 314.875"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 574.1 270.70000000000005"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="via" height="235.875" width="157.25" x="0" y="0"/><rect class="via" height="235.875" width="157.25" x="314.5" y="0"/><line stroke="black" stroke-width="1" x1="157.25" x2="314.5" y1="235.875" y2="235.875"/><line stroke="black" stroke-width="1" x1="314.5" x2="303.64041524734944" y1="235.875" y2="229.60503189800778"/><line stroke="black" stroke-width="1" x1="314.5" x2="303.64041524734944" y1="235.875" y2="242.14496810199222"/><line stroke="black" stroke-width="1" x1="314.5" x2="157.25" y1="235.875" y2="235.875"/><line stroke="black" stroke-width="1" x1="157.25" x2="168.10958475265053" y1="235.875" y2="242.14496810199222"/><line stroke="black" stroke-width="1" x1="157.25" x2="168.10958475265053" y1="235.875" y2="229.60503189800778"/><text x="157.25" y="254.375">space &gt;= 0.170&#181;m</text><text x="157.25" y="272.875">(via.2)</text><rect class="via" height="12.95" width="12.95" x="0" y="278.425"/><text x="17.95" y="291.375">via</text></svg>
+</style></defs><rect class="via" height="188.70000000000002" width="188.70000000000002" x="0" y="0"/><rect class="via" height="188.70000000000002" width="188.70000000000002" x="377.40000000000003" y="0"/><line stroke="black" stroke-width="1" x1="188.70000000000002" x2="377.40000000000003" y1="188.70000000000002" y2="188.70000000000002"/><line stroke="black" stroke-width="1" x1="377.40000000000003" x2="365.5039209316683" y1="188.70000000000002" y2="181.83159407140204"/><line stroke="black" stroke-width="1" x1="377.40000000000003" x2="365.5039209316683" y1="188.70000000000002" y2="195.568405928598"/><line stroke="black" stroke-width="1" x1="377.40000000000003" x2="188.70000000000002" y1="188.70000000000002" y2="188.70000000000002"/><line stroke="black" stroke-width="1" x1="188.70000000000002" x2="200.59607906833173" y1="188.70000000000002" y2="195.568405928598"/><line stroke="black" stroke-width="1" x1="188.70000000000002" x2="200.59607906833173" y1="188.70000000000002" y2="181.83159407140204"/><text x="196.70000000000002" y="215.20000000000002">space &gt;= 0.170&#181;m</text><text x="196.70000000000002" y="241.70000000000002">(via.2)</text><rect class="via" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="231.25000000000003"/><text x="20.95" y="244.20000000000002">via</text></svg>

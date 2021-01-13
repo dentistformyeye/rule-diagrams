@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 366.3 631.45"><defs><style type="text/css">
+    .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
+    .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
+    
+</style></defs><rect class="poly" height="549.45" width="366.3" x="0" y="0"/><line stroke="black" stroke-width="1" x1="0" x2="366.3" y1="567.95" y2="567.95"/><line stroke="black" stroke-width="1" x1="366.3" x2="349.72565588628015" y1="567.95" y2="558.3805172553581"/><line stroke="black" stroke-width="1" x1="366.3" x2="349.72565588628015" y1="567.95" y2="577.519482744642"/><line stroke="black" stroke-width="1" x1="366.3" x2="0" y1="567.95" y2="567.95"/><line stroke="black" stroke-width="1" x1="0" x2="16.574344113719857" y1="567.95" y2="577.519482744642"/><line stroke="black" stroke-width="1" x1="0" x2="16.574344113719857" y1="567.95" y2="558.3805172553581"/><text x="0" y="586.45">width &gt;= 0.330&#181;m</text><text x="0" y="604.95">(poly.3)</text><rect class="poly" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="610.5"/><text x="20.95" y="623.45">poly resistor</text></svg>

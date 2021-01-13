@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 208.125 183.0625"><defs><style type="text/css">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 257.75 165.25"><defs><style type="text/css">
     .background {fill:white;}
     .default {fill:grey;}
     .diff {fill:rgb(196,157,113);}
     .tap {fill:rgb(121,196,113);}
     .poly {fill:rgb(212,90,92);}
     .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
-    .met1, .huge_met1 {fill:rgb(190,144,217);}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
     .via {fill:rgb(59,0,246);}
     .checkmark {fill:rgb(0,192,0);font-size:74px;}
     .no {fill:rgb(179,0,0);font-size:74px;}
     
-</style></defs><rect class="poly" height="104.0625" width="69.375" x="0" y="0"/><rect class="diff" height="104.0625" width="69.375" x="138.75" y="0"/><line stroke="black" stroke-width="1" x1="69.375" x2="138.75" y1="104.0625" y2="104.0625"/><line stroke="black" stroke-width="1" x1="138.75" x2="131.53694256920133" y1="104.0625" y2="99.89791718776058"/><line stroke="black" stroke-width="1" x1="138.75" x2="131.53694256920133" y1="104.0625" y2="108.22708281223942"/><line stroke="black" stroke-width="1" x1="138.75" x2="69.375" y1="104.0625" y2="104.0625"/><line stroke="black" stroke-width="1" x1="69.375" x2="76.58805743079867" y1="104.0625" y2="108.22708281223942"/><line stroke="black" stroke-width="1" x1="69.375" x2="76.58805743079867" y1="104.0625" y2="99.89791718776058"/><text x="69.375" y="122.5625">space &gt;= 0.075&#181;m</text><text x="69.375" y="141.0625">(poly.4)</text><rect class="poly" height="12.95" width="12.95" x="0" y="146.6125"/><text x="17.95" y="159.5625">poly</text><rect class="diff" height="12.95" width="12.95" x="0" y="165.1125"/><text x="17.95" y="178.0625">diff</text></svg>
+</style></defs><rect class="poly" height="83.25" width="83.25" x="0" y="0"/><rect class="diff" height="83.25" width="83.25" x="166.5" y="0"/><line stroke="black" stroke-width="1" x1="83.25" x2="166.5" y1="83.25" y2="83.25"/><line stroke="black" stroke-width="1" x1="166.5" x2="158.59849147314262" y1="83.25" y2="78.68792810227633"/><line stroke="black" stroke-width="1" x1="166.5" x2="158.59849147314262" y1="83.25" y2="87.81207189772367"/><line stroke="black" stroke-width="1" x1="166.5" x2="83.25" y1="83.25" y2="83.25"/><line stroke="black" stroke-width="1" x1="83.25" x2="91.15150852685738" y1="83.25" y2="87.81207189772367"/><line stroke="black" stroke-width="1" x1="83.25" x2="91.15150852685738" y1="83.25" y2="78.68792810227633"/><text x="91.25" y="109.75">space &gt;= 0.075&#181;m</text><text x="91.25" y="136.25">(poly.4). Parallel edges only</text><rect class="poly" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="125.8"/><text x="20.95" y="138.75">poly</text><rect class="diff" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="144.3"/><text x="20.95" y="157.25">diff</text></svg>

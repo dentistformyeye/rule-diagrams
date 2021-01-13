@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="100%" version="1.1" width="100%" viewBox="0 0 159.7 223.2"><defs><style type="text/css">
+    .background {fill:white;}
+    .default {fill:grey;}
+    .diff {fill:rgb(196,157,113);}
+    .tap {fill:rgb(121,196,113);}
+    .poly {fill:rgb(212,90,92);}
+    .mcon {fill:rgb(204,202,204);stroke-width:1;stroke:black;}
+    .met1 {fill:rgb(190,144,217);}
+    .huge_met1 {fill:rgb(160,114,187);}
+    .via {fill:rgb(59,0,246);}
+    .checkmark {fill:rgb(0,192,0);font-size:74px;}
+    .no {fill:rgb(179,0,0);font-size:74px;}
+    
+</style></defs><rect class="met1" height="133.2" width="133.2" x="0" y="0"/><rect class="mcon" height="66.6" width="66.6" x="33.3" y="33.3"/><line stroke="black" stroke-width="1" style="stroke-dasharray:8,8;" x1="0" x2="0" y1="99.89999999999999" y2="133.2"/><line stroke="black" stroke-width="1" style="stroke-dasharray:8,8;" x1="33.3" x2="33.3" y1="99.89999999999999" y2="133.2"/><line stroke="black" stroke-width="1" x1="0" x2="33.3" y1="141.2" y2="141.2"/><line stroke="black" stroke-width="1" x1="33.3" x2="28.302647220777782" y1="141.2" y2="138.3146923907493"/><line stroke="black" stroke-width="1" x1="33.3" x2="28.302647220777782" y1="141.2" y2="144.0853076092507"/><line stroke="black" stroke-width="1" x1="33.3" x2="0" y1="141.2" y2="141.2"/><line stroke="black" stroke-width="1" x1="0" x2="4.997352779222215" y1="141.2" y2="144.0853076092507"/><line stroke="black" stroke-width="1" x1="0" x2="4.997352779222215" y1="141.2" y2="138.3146923907493"/><text x="0" y="159.7">space &gt;= 0.005&#181;m</text><text x="0" y="178.2">(m1.4a). Only for certain cell names</text><line stroke="black" stroke-width="1" style="stroke-dasharray:8,8;" x1="99.89999999999999" x2="133.2" y1="0" y2="0"/><line stroke="black" stroke-width="1" style="stroke-dasharray:8,8;" x1="99.89999999999999" x2="133.2" y1="33.3" y2="33.3"/><line stroke="black" stroke-width="1" x1="141.2" x2="141.2" y1="0" y2="33.3"/><line stroke="black" stroke-width="1" x1="141.2" x2="144.0853076092507" y1="33.3" y2="28.302647220777782"/><line stroke="black" stroke-width="1" x1="141.2" x2="138.3146923907493" y1="33.3" y2="28.302647220777782"/><line stroke="black" stroke-width="1" x1="141.2" x2="141.2" y1="33.3" y2="0"/><line stroke="black" stroke-width="1" x1="141.2" x2="138.3146923907493" y1="0" y2="4.997352779222215"/><line stroke="black" stroke-width="1" x1="141.2" x2="144.0853076092507" y1="0" y2="4.997352779222215"/><rect class="met1" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="183.75"/><text x="20.95" y="196.7">met1</text><rect class="mcon" height="12.95" style="fill-opacity:1.0;" width="12.95" x="0" y="202.25"/><text x="20.95" y="215.2">mcon</text></svg>
